@@ -1,0 +1,358 @@
+:root {
+  font-family: Inter, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  color: #f5efe7;
+  background: #0d1220;
+  font-weight: 400;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  min-height: 100%;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(106, 127, 255, 0.25), transparent 35%),
+    linear-gradient(135deg, #09111d 0%, #101828 50%, #1a1429 100%);
+}
+
+body {
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 16px;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  opacity: 0.75;
+  margin-bottom: 0.5rem;
+}
+
+.landing-panel,
+.game-layout {
+  display: grid;
+  gap: 24px;
+}
+
+.landing-panel {
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: start;
+}
+
+.intro-copy,
+.generator-card,
+.story-panel,
+.victory-panel {
+  background: rgba(15, 19, 35, 0.78);
+  border: 1px solid rgba(163, 180, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 18px 48px rgba(8, 11, 18, 0.38);
+}
+
+.intro-copy {
+  padding: 32px;
+}
+
+.intro-copy h2 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin: 0 0 20px;
+}
+
+.intro-copy p {
+  font-size: 1.08rem;
+  color: rgba(245, 239, 231, 0.8);
+}
+
+.generator-card {
+  padding: 24px;
+  display: grid;
+  gap: 14px;
+}
+
+.generator-card label {
+  font-weight: 600;
+}
+
+textarea,
+input,
+select {
+  width: 100%;
+  border: 1px solid rgba(163, 180, 255, 0.25);
+  border-radius: 12px;
+  background: rgba(9, 14, 24, 0.8);
+  color: #f5efe7;
+  padding: 12px 14px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.primary-button,
+.secondary-button,
+.ghost-button {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-weight: 700;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.primary-button {
+  background: linear-gradient(135deg, #7c9eff, #9f7afe);
+  color: #f9f7ff;
+}
+
+.secondary-button {
+  background: rgba(147, 166, 255, 0.14);
+  color: #edf3ff;
+  border: 1px solid rgba(147, 166, 255, 0.35);
+}
+
+.ghost-button {
+  background: transparent;
+  color: #edf3ff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.primary-button:hover,
+.secondary-button:hover,
+.ghost-button:hover {
+  transform: translateY(-1px);
+}
+
+.primary-button:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.error-banner {
+  margin: 0;
+  color: #ffb3b3;
+  background: rgba(104, 23, 34, 0.3);
+  border: 1px solid rgba(255, 127, 127, 0.35);
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+.story-panel {
+  padding: 24px;
+}
+
+.mystery-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.mystery-header h2 {
+  margin: 0;
+  font-size: clamp(1.9rem, 2vw, 2.6rem);
+}
+
+.pill-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: rgba(124, 158, 255, 0.16);
+  padding: 6px 10px;
+  font-size: 0.78rem;
+  color: #dfe7ff;
+  border: 1px solid rgba(124, 158, 255, 0.3);
+  text-transform: capitalize;
+}
+
+.story-text {
+  color: rgba(245, 239, 231, 0.84);
+  font-size: 1.08rem;
+  margin: 20px 0 28px;
+}
+
+.room-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.room-tab {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px 16px;
+  background: rgba(26, 32, 48, 0.8);
+  border-radius: 14px;
+  border: 1px solid rgba(160, 177, 255, 0.18);
+  color: inherit;
+}
+
+.room-tab.selected {
+  border-color: rgba(157, 178, 255, 0.72);
+  background: rgba(59, 74, 121, 0.42);
+}
+
+.room-card {
+  border-top: 1px solid rgba(155, 173, 255, 0.18);
+  padding-top: 18px;
+}
+
+.room-card h3 {
+  margin-top: 0;
+  font-size: 1.6rem;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin: 18px 0;
+}
+
+.item-card {
+  padding: 16px;
+  border-radius: 14px;
+  background: rgba(13, 17, 26, 0.82);
+  border: 1px solid rgba(151, 170, 255, 0.18);
+}
+
+.item-card h4 {
+  margin: 0 0 8px;
+}
+
+.item-card p {
+  margin: 0 0 12px;
+  color: rgba(245, 239, 231, 0.82);
+}
+
+.clue-box,
+.hint-box,
+.feedback {
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-top: 12px;
+}
+
+.clue-box {
+  background: rgba(47, 77, 69, 0.65);
+  border: 1px solid rgba(90, 190, 163, 0.4);
+}
+
+.puzzle-box {
+  margin-top: 26px;
+  padding: 18px;
+  border-radius: 16px;
+  background: rgba(18, 22, 36, 0.82);
+  border: 1px solid rgba(157, 182, 255, 0.18);
+}
+
+.answer-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.answer-row input {
+  flex: 1;
+}
+
+.hint-panel {
+  margin-top: 18px;
+}
+
+.hint-box {
+  background: rgba(90, 77, 115, 0.28);
+  border: 1px solid rgba(177, 140, 255, 0.34);
+}
+
+.feedback {
+  font-weight: 600;
+}
+
+.feedback.success {
+  background: rgba(51, 103, 77, 0.32);
+  border: 1px solid rgba(95, 194, 140, 0.4);
+  color: #daf7e8;
+}
+
+.feedback.error {
+  background: rgba(122, 35, 47, 0.34);
+  border: 1px solid rgba(255, 125, 125, 0.38);
+  color: #ffd2d2;
+}
+
+.feedback.info {
+  background: rgba(84, 87, 120, 0.34);
+  border: 1px solid rgba(160, 170, 255, 0.38);
+  color: #e7edff;
+}
+
+.victory-panel {
+  padding: 24px;
+  align-self: start;
+  background: linear-gradient(135deg, rgba(60, 79, 118, 0.88), rgba(36, 44, 77, 0.9));
+}
+
+.victory-panel h3 {
+  margin-top: 0;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 820px) {
+  .landing-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar,
+  .mystery-header,
+  .answer-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .room-list {
+    grid-template-columns: 1fr;
+  }
+}

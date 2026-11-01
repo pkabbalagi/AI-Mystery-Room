@@ -1,0 +1,238 @@
+[
+  {
+    "title": "The Secret of the Subterranean Sky",
+    "theme": "A forgotten observatory hums beneath a moonlit city while a missing star map has vanished.",
+    "difficulty": "easy",
+    "estimatedCompletionTime": "25-35 minutes",
+    "story": "Deep beneath the cobblestones of the moonlit city of Lunaria, a century-old observatory quietly hums with brass gears and glowing starlight crystals. This subterranean marvel powers the navigational lanterns that guide airships and night travelers above. Tonight, however, the city's lights have begun to flicker erratically—the legendary Astraea Star Map has vanished from its central pedestal, causing the automated security vault to seal tight. As the apprentice astronomer on duty, you must venture through three locked chambers, decode the observatory's mechanical guardians, and retrieve the missing star map before the city plunges into eternal darkness.",
+    "rooms": [
+      {
+        "id": "room-1",
+        "name": "The Pendulum Antechamber",
+        "description": "An arched stone hall illuminated by warm gas lamps, filled with the steady rhythm of a colossal brass pendulum sweeping across the floor.",
+        "items": [
+          {
+            "id": "item-1",
+            "name": "Engraved Brass Plaque",
+            "description": "A polished plate fixed to the security door, depicting celestial cycles.",
+            "clue": "The inscription reads: 'To enter the heart of starlight, speak the ancient name of Earth's closest nocturnal neighbor.'"
+          },
+          {
+            "id": "item-2",
+            "name": "Keeper's Pocket Journal",
+            "description": "A worn leather diary left on a side table beside a cooling cup of chamomile tea.",
+            "clue": "A highlighted passage notes: 'Our vault security code honors the Roman goddess of the moon in four letters.'"
+          },
+          {
+            "id": "item-3",
+            "name": "Lunar Dial Mechanism",
+            "description": "A rotating brass letter dial on the door requiring a single word password.",
+            "clue": "Letters L, U, N, and A are slightly more polished than the others on the dial face."
+          }
+        ],
+        "puzzle": {
+          "question": "What four-letter Latin word opens the heavy vault door to the archives?",
+          "answer": "LUNA",
+          "hints": [
+            "Check the Keeper's Pocket Journal for the identity of the Roman goddess of the moon.",
+            "The word refers to our moon and uses the polished letters seen on the dial.",
+            "The word starts with 'L' and ends with 'A'."
+          ],
+          "explanation": "Combining the plaque's mention of our nocturnal neighbor and the journal's hint about the Roman moon goddess gives the four-letter word LUNA, which unlocks the antechamber door."
+        }
+      },
+      {
+        "id": "room-2",
+        "name": "The Archivist's Study",
+        "description": "A cozy, circular library stacked floor-to-ceiling with star catalogs, optical prisms, and softly glowing mineral lamps.",
+        "items": [
+          {
+            "id": "item-4",
+            "name": "Prism Projection Lantern",
+            "description": "A brass lantern fitted with a rotating triangular prism that casts sharp colored rays across the wall.",
+            "clue": "The brightest sapphire beam shines directly onto a small iron wall safe."
+          },
+          {
+            "id": "item-5",
+            "name": "Color Spectrum Chart",
+            "description": "A framed parchment showing wavelengths of light mapped to astronomical elements.",
+            "clue": "A note in the margin states: 'The safe's keyway aligns with deep ocean sapphire, the color of twilight skies.'"
+          },
+          {
+            "id": "item-6",
+            "name": "Archivist's Index Card",
+            "description": "A marked reference card tucked inside a book on celestial cartography.",
+            "clue": "The card says: 'Safe mechanism requires the primary color associated with calm seas and clear midnight horizons.'"
+          }
+        ],
+        "puzzle": {
+          "question": "Which color button must be pressed to unlock the archivist's document safe?",
+          "answer": "BLUE",
+          "hints": [
+            "Look at the beam cast by the Prism Projection Lantern onto the safe.",
+            "The Spectrum Chart refers to sapphire and twilight skies.",
+            "It is a four-letter primary color starting with the letter 'B'."
+          ],
+          "explanation": "The sapphire light beam from the prism and the reference chart both indicate that pressing the BLUE button will open the safe, revealing the dome's access key."
+        }
+      },
+      {
+        "id": "room-3",
+        "name": "The Grand Orrery Dome",
+        "description": "A breathtaking domed chamber opening to the underground sky via mirrored skylights, featuring an enormous clockwork model of the solar system.",
+        "items": [
+          {
+            "id": "item-7",
+            "name": "The Clockwork Orrery",
+            "description": "A majestic machine of interlocking gears and miniature rotating planets spinning around a glowing sun.",
+            "clue": "A gold plaque at the base reads: 'The chart is kept safe by the custodian who never sleeps, pointing forever toward true North.'"
+          },
+          {
+            "id": "item-8",
+            "name": "The Mechanical Owl",
+            "description": "A bronze automaton owl perched upon an ornate stand, holding a locked canister under its wing.",
+            "clue": "The owl's chest displays a seven-letter combination lock labeled 'Guiding Northern Beacon'."
+          },
+          {
+            "id": "item-9",
+            "name": "Stellar Compass",
+            "description": "A magnetic star compass embedded into the astronomer's console.",
+            "clue": "The needle points steadfastly north toward the engraved name: 'POLARIS'."
+          }
+        ],
+        "puzzle": {
+          "question": "What star name must be entered into the Mechanical Owl's combination lock to retrieve the map?",
+          "answer": "POLARIS",
+          "hints": [
+            "The mechanical owl holds the canister and requires the name of the eternal northern guiding star.",
+            "Inspect the Stellar Compass on the astronomer's console to see which star the needle points to.",
+            "It is a seven-letter star name beginning with 'P' and ending with 'S'."
+          ],
+          "explanation": "The Stellar Compass and the Orrery plaque both point toward Polaris, the North Star. Entering POLARIS into the automaton owl's lock releases the Astraea Star Map."
+        }
+      }
+    ],
+    "finalSolution": {
+      "summary": "By solving the antechamber's lock with the password 'LUNA', the apprentice gained access to the archives. Using the prism clues to select the color 'BLUE', they opened the safe to enter the Grand Orrery Dome. Finally, by identifying 'POLARIS' on the stellar compass, they unlocked the mechanical owl automaton, which had safely stored the missing Astraea Star Map away from harm.",
+      "successMessage": "Congratulations, Stargazer! You have solved the observatory's riddles, retrieved the Astraea Star Map, and returned it to its pedestal. The city's lanterns above glow brightly once more across the moonlit skyline!"
+    }
+  },
+  {
+    "title": "The Subterranean Star Keeper",
+    "theme": "A forgotten observatory hums beneath a moonlit city while a missing star map has vanished.",
+    "difficulty": "medium",
+    "estimatedCompletionTime": "25-35 minutes",
+    "story": "Deep beneath the cobblestone streets of Oakhaven, an ancient subterranean observatory hums with forgotten energy. Powered by subterranean steam and celestial clockwork, this hidden sanctuary houses the Great Celestial Chart—a master map of the night sky that has guided astronomers for centuries. Tonight, beneath a brilliant full moon, the Chart has vanished from its glass pedestal. The clockwork mechanisms are reactivating, sealing the exit. You must explore the observatory's three historic chambers, unravel the astronomical puzzles, and recover the missing star map before the planetary alignment passes.",
+    "rooms": [
+      {
+        "id": "room-meridian-foyer",
+        "name": "The Meridian Foyer",
+        "description": "A circular stone foyer lined with brass star charts and illuminated by glowing lunar lanterns.",
+        "items": [
+          {
+            "id": "item-brass-telescope",
+            "name": "Brass Scope",
+            "description": "A heavy antique scope fixed toward a ceiling dome, zoomed into a specific constellation.",
+            "clue": "Looking through the lens reveals a constellation shaped like a swan, composed of exactly 6 bright stars."
+          },
+          {
+            "id": "item-curator-log",
+            "name": "Curator's Journal",
+            "description": "A leather-bound journal open on a wooden podium.",
+            "clue": "An entry reads: 'To pass the foyer, align the celestial lock to the swan constellation that watches over the northern sky.'"
+          },
+          {
+            "id": "item-constellation-wheel",
+            "name": "Constellation Dial",
+            "description": "A rotary brass dial mounted on the archway door engraved with star names: Orion, Cygnus, Ursa, and Pegasus.",
+            "clue": "The dial has four positions, each representing a northern constellation."
+          }
+        ],
+        "puzzle": {
+          "question": "Which constellation name must be selected on the rotary dial to unlock the archway door?",
+          "answer": "CYGNUS",
+          "hints": [
+            "Check the celestial shape seen through the brass scope.",
+            "The curator's log mentions a swan constellation in the northern sky.",
+            "The Latin name for the swan constellation is Cygnus."
+          ],
+          "explanation": "The brass scope shows a swan constellation made of 6 stars, which the curator's journal identifies as the key to the archway lock. The swan constellation is Cygnus."
+        }
+      },
+      {
+        "id": "room-gearwork-rotunda",
+        "name": "The Gearwork Rotunda",
+        "description": "A towering chamber filled with massive interlocking brass gears, hissing steam pipes, and balancing scales.",
+        "items": [
+          {
+            "id": "item-weight-scale",
+            "name": "Sun-Moon Balance Scale",
+            "description": "A set of brass scales used to calibrate steam valves.",
+            "clue": "A carved plaque on the scale base notes: '1 Brass Sun counterbalances exactly 3 Copper Stars.'"
+          },
+          {
+            "id": "item-pressure-gauge",
+            "name": "Steam Valve Gauge",
+            "description": "A copper gauge with a glowing dial indicating required pressure weight.",
+            "clue": "The gauge indicator points to a target weight equal to 5 Brass Suns."
+          },
+          {
+            "id": "item-copper-stars-box",
+            "name": "Box of Copper Stars",
+            "description": "A wooden chest containing small, heavy copper star weights.",
+            "clue": "The chest lid says: 'Place the total equivalent copper stars onto the counterweight tray to stabilize pressure.'"
+          }
+        ],
+        "puzzle": {
+          "question": "How many total copper stars must be placed on the counterweight tray to balance the steam valve equal to 5 brass suns?",
+          "answer": "15",
+          "hints": [
+            "Check the conversion plaque on the balance scale.",
+            "One brass sun equals three copper stars.",
+            "Multiply 5 brass suns by 3 copper stars per sun."
+          ],
+          "explanation": "Since 1 brass sun equals 3 copper stars, a requirement of 5 brass suns equals 5 times 3, which is 15 copper stars."
+        }
+      },
+      {
+        "id": "room-celestial-vault",
+        "name": "The Vault of the Celestial Sphere",
+        "description": "The heart of the observatory, featuring a giant starlight projector and a steel wall safe.",
+        "items": [
+          {
+            "id": "item-empty-pedestal",
+            "name": "Empty Map Pedestal",
+            "description": "The marble stand where the master star map usually rests.",
+            "clue": "A scratched inscription on the brass base reads: 'Coordinate 1 = Star Count from Foyer (6). Coordinate 2 = Weight Count from Rotunda (15).'"
+          },
+          {
+            "id": "item-projection-lens",
+            "name": "Projection Lens Housing",
+            "description": "A glass lens etched with tiny numerical markings.",
+            "clue": "The housing bezel is locked into lens position tier '3'."
+          },
+          {
+            "id": "item-keypad-safe",
+            "name": "Vault Wall Safe",
+            "description": "A heavy wall safe with a four-digit numeric keypad.",
+            "clue": "The safe requires a 4-digit code composed by joining Coordinate 1 (1 digit: 6), Coordinate 2 (2 digits: 15), and the Lens Tier (1 digit: 3)."
+          }
+        ],
+        "puzzle": {
+          "question": "Enter the 4-digit code to open the vault wall safe and retrieve the star map.",
+          "answer": "6153",
+          "hints": [
+            "Combine the values found across all three chambers in order.",
+            "First digit is the star count (6), next two digits are the copper star weight (15).",
+            "The final single digit is the projection lens tier (3)."
+          ],
+          "explanation": "Combining the 6 stars from Cygnus in Room 1, the 15 copper stars from Room 2, and the lens tier 3 from Room 3 produces the 4-digit code: 6153."
+        }
+      }
+    ],
+    "finalSolution": {
+      "summary": "By identifying the Cygnus constellation in the Meridian Foyer, calculating the required counterweight of 15 copper stars in the Gearwork Rotunda, and combining these clues with the lens tier of the projector in the Vault of the Celestial Sphere, you deduced the four-digit code 6153. Entering this code opened the vault safe, safely recovering the missing Great Celestial Chart.",
+      "successMessage": "Congratulations! The hum of the ancient observatory harmonizes with the moonlit sky as the Great Celestial Chart is restored to its rightful place!"
+    }
+  }
+]
